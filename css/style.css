@@ -299,6 +299,11 @@ a {
 }
 .port__img img{
     width: 100%;
+    transition: all 2s;
+    position: block;
+}
+.port__img img:hover {
+    transform: scale(1.20);
 }
 @media (min-width:768px) {
     .port__title, .port__link {
@@ -448,12 +453,16 @@ a {
     gap: 5px;
 }
 .gallery__cont {
-    position: relative;
+    position: block;
 }
 .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 2s;
+}
+.gallery__img:hover {
+    transform: scale(1.15);
 }
 .gallery__cont:nth-child(2) {
     grid-row-start: span 2;
