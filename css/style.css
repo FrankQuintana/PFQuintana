@@ -694,6 +694,9 @@ a {
     border: #252422 solid 2px;
     box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
 }
+.ubication__link {
+    color: #000;
+}
 @media (min-width:768px) {
     .contact {
         grid-template-columns: repeat(2, max-content);
