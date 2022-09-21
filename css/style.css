@@ -570,9 +570,10 @@ a {
     font-size: 1rem;
     cursor: pointer;
     align-self: center;
+    transition: .5s ease all;
 }
 .prod__btn:hover {
-    border: #264653 solid 2px;
+    border: #252422 solid 2px;
     background: #fff;
     color: #264653;
     box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
@@ -685,10 +686,13 @@ a {
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: 1s;
 }
 .form__btn:hover {
-    transition: .5s;
-    background-color: #2e2e2e;
+    color: #000;
+    background-color: #fff;
+    border: #252422 solid 2px;
+    box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
 }
 @media (min-width:768px) {
     .contact {
