@@ -455,6 +455,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
     gap: 5px;
+    overflow: hidden;
 }
 .gallery__cont {
     position: block;
