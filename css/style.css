@@ -218,7 +218,8 @@ a {
 .about__title {
     text-align: center;
     font-size: 1.9rem;
-    color: #252422
+    color: #252422;
+    text-transform: uppercase;
 }
 .about__img {
     width: 100%;
@@ -245,7 +246,7 @@ a {
         
     }
     .about__txt {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }
 @media (min-width:1024px) {
@@ -287,8 +288,9 @@ a {
     text-decoration: none;
     font-size: 1.9rem;
     color: #000;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .port__gallery {
     width: 100%;
@@ -331,8 +333,9 @@ a {
 .service__title {
     text-align: center;
     font-size: 1.9rem;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .service__title-h3, .serv__link {
     font-size: 1.4rem;
