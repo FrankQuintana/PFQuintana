@@ -92,7 +92,7 @@ a {
     background-color: #000;
     color: #fff;
 }
-.foot {
+.footer {
     height: 200px;
     display: grid;
     align-items: center;
@@ -518,7 +518,7 @@ a {
         letter-spacing: none;
     }
     /* footer */
-    .foot {
+    .footer {
         display: flex;
         justify-content: space-around;
     }
