@@ -1,0 +1,125 @@
+/* pagina contacto */
+.contact {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+    gap: 15px;
+}
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 1);
+}
+.contact__number,
+.contact__ubication,
+.contact__time {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact__icon {
+    width: 35px;
+}
+.contact__form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 1);
+}
+.contact__title-form {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.form, .contact__line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.contact__line {
+    margin-bottom: 45px;
+}
+.contact__label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.form__input {
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: #252422 solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+.form__input--message {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+.form__btn {
+    padding: 18px 55px;
+    background-color: #252422;
+    border-radius: 50px;
+    color: #f2f2f2;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.form__btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: #252422 solid 2px;
+    box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
+}
+/* .ubication__link {
+    color: #000;
+} */
+@media (min-width:768px) {
+    /* pagina contacto */
+    .contact {
+        grid-template-columns: repeat(2, max-content);
+    }
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media (min-width:1024px) {
+    /* pagina contacto */
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 70px;
+        gap: 30px;
+    }
+    .contact__title {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .contact__txt {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .contact__icon {
+        width: 50px;
+    }
+}

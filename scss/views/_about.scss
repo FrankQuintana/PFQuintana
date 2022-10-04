@@ -1,0 +1,65 @@
+/* pagina nosotros */
+.about__nosotros {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);
+}
+.about__mision {
+    grid-row: 1/2;
+}
+.about__team {
+    grid-row: 2/3;
+}
+.img__about-pag, .vid__about-pag {
+    width: 100%;
+}
+.about__title-pag {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #252422;
+}
+.about__text-pag {
+    text-align: justify;
+    color: #5e5e5e;
+}
+.about__history {
+    grid-row: 3/4;
+}
+.about__video {
+    grid-row: 4/5;
+}
+@media (min-width:768px) {
+    /* pagina nosotros */
+    .about__nosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, max-content);
+    }
+    .about__team {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .about__history {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .about__video {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+}
+@media (min-width:1024px) {
+    /* pagina nosotros */
+    .about__team {
+        width: 70%;
+    }
+    .about__mision,
+    .about__history {
+        justify-self: center;
+        align-self: center;
+    }
+}
