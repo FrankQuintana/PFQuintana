@@ -83,49 +83,8 @@ a {
     border-left: none;
     border-right: none;
 }
-@media (min-width:768px) {
-    .hero {
-        height: 150px;
-    }
-    .nav {
-        --state-bars: scale(0);
-        --state-menu: translate(0);
-        padding: 0 15px;
-    }
-    .nav:target {
-        --state-close: scale(0);
-    }
-    .nav__ul {
-        padding: 0;
-        background-color:unset;
-        position: unset;
-        gap: 1.15em;
-        grid-auto-flow: column;
-        transform: unset;
-        grid-column: -2/-1;
-        grid-row: 1/2;
-    }
-    .nav__link {
-        font-size: 1.18rem;
-        letter-spacing: none;
-    }
-    
-}
-@media (min-width:1024px) {
-    .nav {
-        padding: 0 40px;
-    }
-    .nav__link {
-        font-size: 1.5rem;
-        letter-spacing: none;
-    }
-    .first__title {
-        font-size: 6rem;
-    }
-    .first__txt {
-        font-size: 3rem;
-    }
-}
+
+
 /* footer */
 .footer__container {
     margin: 0 auto;
@@ -164,35 +123,8 @@ a {
     grid-column: -4/-1;
     grid-row: 2/3;
 }
-@media (min-width:768px) {
-    .foot {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-@media (min-width:550px) {
-    .about__title,
-    .port__title, 
-    .port__link,
-    .service__title {
-        font-size: 2.3rem;
-    }
-    .about__title-h3,
-    .service__title-h3,
-    .serv__link {
-        font-size: 1.8rem;
-    }
-    .about__txt,
-    .serv__txt {
-        font-size: 1.2rem;
-    }
-    .first__title {
-        font-size: 3rem;
-    }
-    .first__txt {
-        font-size: 1.35rem;
-    }
-}
+
+
 /* main contenedor Index*/
 .main {
     display: grid;
@@ -235,47 +167,8 @@ a {
     color: #777777;
     text-align: justify;
 }
-@media (min-width:768px) {
-    .about__title {
-        font-size: 2.8rem;
-        letter-spacing: 4px;
-    }
-    .about__title-h3 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        
-    }
-    .about__txt {
-        font-size: 1.3rem;
-    }
-}
-@media (min-width:1024px) {
-    .about__container {
-        width: 100%;
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        grid-template-rows: 10% 90%;
-    }
-    .about__title {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .about__img {
-        height: 100%;
-        grid-column: 1/2;
-    }
-    .about__txts {
-        grid-column: 2/3;
-        align-self: center;
-    }
-    .about__title-h3 {
-        text-align: start;
-    }
-    .about__txt {
-        line-height: none;
-        margin: 1em 0;
-    }
-}
+
+
 /* portafolio */
 .portfolio {
     background-color: #777777;
@@ -308,24 +201,8 @@ a {
 .port__img img:hover {
     transform: scale(1.20);
 }
-@media (min-width:768px) {
-    .port__title, .port__link {
-        font-size: 2.9rem;
-        letter-spacing: 4px;
-        color: #252422;
-    }
-}
-@media (min-width:1024px) {
-    .port__gallery {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .port__img {
-        width: 30%;
-        margin-bottom: 10px;
-    }
-}
+
+
 /* servicios */
 .service {
     grid-area: service;
@@ -352,35 +229,8 @@ a {
 .serv__img {
     width: 100%;
 }
-@media (min-width:768px) {
-    
-    .service__container {
-        justify-content: center;
-        align-content: center;
-    }
-    .service__title {
-        font-size: 2.9rem;
-        letter-spacing: 4px;
-    }
-    .service__title-h3, .serv__link {
-        font-size: 2.5rem;
-        font-weight: 400;
-    }
-    .serv__txt {
-        font-size: 1.5rem;
-    }
-}
-@media (min-width:1024px) {
-    .service__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 10% 90%;
-        gap: 10px;
-    }
-    .service__title {
-        grid-column: 1/4;
-    }
-}
+
+
 /* pagina nosotros */
 .about__nosotros {
     display: grid;
@@ -414,36 +264,8 @@ a {
 .about__video {
     grid-row: 4/5;
 }
-@media (min-width:768px) {
-    .about__nosotros {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, max-content);
-    }
-    .about__team {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .about__history {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .about__video {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        justify-self: center;
-        align-self: center;
-    }
-}
-@media (min-width:1024px) {
-    .about__team {
-        width: 70%;
-    }
-    .about__mision,
-    .about__history {
-        justify-self: center;
-        align-self: center;
-    }
-}
+
+
 /* pagina portafolio */
 .gallery__title {
     font-size: 1.5rem;
@@ -487,44 +309,8 @@ a {
 .gallery__cont:nth-child(10) {
     grid-row-start: span 2;
 }
-@media (min-width:768px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 250px;
-        gap: 10px;
-    }
-    .gallery__title {
-        font-size: 2rem;
-    }
-    .gallery__cont:nth-child(12) {
-        grid-column-end: span 3;
-    }
-    .gallery__cont:nth-child(1) {
-        grid-column-start: span 2;
-    }
-    .gallery__cont:nth-child(3) {
-        grid-column-start: span 2;
-    }
-}
-@media (min-width:1024px) {
-    .gallery {
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 300px;
-        gap: 15px;
-        width: 95%;
-        margin: auto;
-    }
-    .gallery__title {
-        font-size: 2.5rem;
-    }
-    .gallery__cont:nth-child(11) {
-        grid-column-start: span 2;
-    }
-    .gallery__cont:nth-child(2) {
-        grid-column-start: span 2;
-        grid-row-start: span 2;
-    }
-}
+
+
 /* pagina productos */
 .product__title {
     text-align: center;
@@ -583,31 +369,8 @@ a {
     color: #264653;
     box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
 }
-@media (min-width:768px) {
-    .products__container {
-        gap: 25px
-    }
-    .product__title {
-        font-size: 3rem;
-        margin-bottom: 30px;
-    }
-    .prod__title, 
-    .prod__txt {
-        font-size: 1.7rem;
-    }
-    .prod__btn {
-        padding: 10px 20px;
-        font-weight: 400;
-        font-size: 1.8rem;
-    }
-}
-@media (min-width:1024px) {
-    .products__container {
-        padding: 0 30px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, max-content);
-    }
-}
+
+
 /* pagina contacto */
 .contact {
     margin: 0 auto;
@@ -702,7 +465,153 @@ a {
 .ubication__link {
     color: #000;
 }
+
+
+/* mediaQ */
+@media (min-width:550px) {
+    .about__title,
+    .port__title, 
+    .port__link,
+    .service__title {
+        font-size: 2.3rem;
+    }
+    .about__title-h3,
+    .service__title-h3,
+    .serv__link {
+        font-size: 1.8rem;
+    }
+    .about__txt,
+    .serv__txt {
+        font-size: 1.2rem;
+    }
+    .first__title {
+        font-size: 3rem;
+    }
+    .first__txt {
+        font-size: 1.35rem;
+    }
+}
 @media (min-width:768px) {
+    .hero {
+        height: 150px;
+    }
+    .nav {
+        --state-bars: scale(0);
+        --state-menu: translate(0);
+        padding: 0 15px;
+    }
+    .nav:target {
+        --state-close: scale(0);
+    }
+    .nav__ul {
+        padding: 0;
+        background-color:unset;
+        position: unset;
+        gap: 1.15em;
+        grid-auto-flow: column;
+        transform: unset;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+    }
+    .nav__link {
+        font-size: 1.18rem;
+        letter-spacing: none;
+    }
+    /* footer */
+    .foot {
+        display: flex;
+        justify-content: space-around;
+    }
+    /* about index */
+    .about__title {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+    }
+    .about__title-h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+
+    }
+    .about__txt {
+        font-size: 1.3rem;
+    }
+    /* portafolio */
+    .port__title, .port__link {
+        font-size: 2.9rem;
+        letter-spacing: 4px;
+        color: #252422;
+    }
+    /* servicios */
+    .service__container {
+        justify-content: center;
+        align-content: center;
+    }
+    .service__title {
+        font-size: 2.9rem;
+        letter-spacing: 4px;
+    }
+    .service__title-h3, .serv__link {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .serv__txt {
+        font-size: 1.5rem;
+    }
+    /* pagina nosotros */
+    .about__nosotros {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, max-content);
+    }
+    .about__team {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .about__history {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .about__video {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+    }
+    /* pagina portafolio */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+    .gallery__title {
+        font-size: 2rem;
+    }
+    .gallery__cont:nth-child(12) {
+        grid-column-end: span 3;
+    }
+    .gallery__cont:nth-child(1) {
+        grid-column-start: span 2;
+    }
+    .gallery__cont:nth-child(3) {
+        grid-column-start: span 2;
+    }
+    /* pagina productos */
+    .products__container {
+        gap: 25px
+    }
+    .product__title {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .prod__title, 
+    .prod__txt {
+        font-size: 1.7rem;
+    }
+    .prod__btn {
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+    /* pagina contacto */
     .contact {
         grid-template-columns: repeat(2, max-content);
     }
@@ -712,9 +621,102 @@ a {
         justify-content: space-around;
         align-items: center;
     }
-    
 }
 @media (min-width:1024px) {
+    /* nav */
+    .nav {
+        padding: 0 40px;
+    }
+    .nav__link {
+        font-size: 1.5rem;
+        letter-spacing: none;
+    }
+    .first__title {
+        font-size: 6rem;
+    }
+    .first__txt {
+        font-size: 3rem;
+    }
+    /* about index */
+    .about__container {
+        width: 100%;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 10% 90%;
+    }
+    .about__title {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .about__img {
+        height: 100%;
+        grid-column: 1/2;
+    }
+    .about__txts {
+        grid-column: 2/3;
+        align-self: center;
+    }
+    .about__title-h3 {
+        text-align: start;
+    }
+    .about__txt {
+        line-height: none;
+        margin: 1em 0;
+    }
+    /* portafolio */
+    .port__gallery {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .port__img {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    /* servicios */
+    .service__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10% 90%;
+        gap: 10px;
+    }
+    .service__title {
+        grid-column: 1/4;
+    }
+    /* pagina nosotros */
+    .about__team {
+        width: 70%;
+    }
+    .about__mision,
+    .about__history {
+        justify-self: center;
+        align-self: center;
+    }
+    /* pagina portafolio */
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+        gap: 15px;
+        width: 95%;
+        margin: auto;
+    }
+    .gallery__title {
+        font-size: 2.5rem;
+    }
+    .gallery__cont:nth-child(11) {
+        grid-column-start: span 2;
+    }
+    .gallery__cont:nth-child(2) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    /* pagina productos */
+    .products__container {
+        padding: 0 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, max-content);
+    }
+    /* pagina contacto */
     .contact {
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 70px;
