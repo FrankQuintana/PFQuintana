@@ -1,8 +1,9 @@
+@use '../abstracts/variables';
 /* footer */
 .footer__container {
     margin: 0 auto;
     width: 100%;
-    background-color: #000;
+    background-color: $color-primario;
     color: #fff;
 }
 .footer {
