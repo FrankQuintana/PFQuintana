@@ -1,0 +1,117 @@
+/* Header (logo y menú) */
+.container__nav {
+    margin: 0 auto;
+    width: 100%;
+    background-color: $color-primario;
+}
+.nav {
+    --state-close: scale(0);
+    --state-bars: scale(1);
+    --state-menu: translate(-100%);
+
+    padding: 0 15px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+.nav:target {
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-bars: scale(0);
+}
+.nav__logo {
+    width: 160px;
+    z-index: 1;
+}
+.nav__menu, .nav__close {
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+.nav__menu {
+    transform: var(--state-bars);
+}
+.nav__close {
+    transform: var(--state-close);
+}
+.nav__icon {
+    width: 40px;
+}
+.nav__ul {
+    background-color: $color-primario;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: grid;
+    align-content: center;
+    gap: 2.5rem;
+    padding-left: 5%;
+    transform: var(--state-menu);
+    transition: .4s transform;
+    text-align: center;
+}
+.nav__li {
+    list-style: none;
+}
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 2px 5px;
+}
+.nav__link:hover {
+    border: #fff solid 2px;
+    color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+@media (min-width:768px) {
+    .hero {
+        height: 150px;
+    }
+    .nav {
+        --state-bars: scale(0);
+        --state-menu: translate(0);
+        padding: 0 15px;
+    }
+    .nav:target {
+        --state-close: scale(0);
+    }
+    .nav__ul {
+        padding: 0;
+        background-color:unset;
+        position: unset;
+        gap: 1.15em;
+        grid-auto-flow: column;
+        transform: unset;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+    }
+    .nav__link {
+        font-size: 1.18rem;
+        letter-spacing: none;
+    }
+}
+@media (min-width:1024px) {
+    /* nav */
+    .nav {
+        padding: 0 40px;
+    }
+    .nav__link {
+        font-size: 1.5rem;
+        letter-spacing: none;
+    }
+    .first__title {
+        font-size: 6rem;
+    }
+    .first__txt {
+        font-size: 3rem;
+    }
+}
