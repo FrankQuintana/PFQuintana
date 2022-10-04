@@ -1,0 +1,22 @@
+@import './abstracts/variables';
+// base container fonts //
+@import 
+    './base/base',
+    './base/typography',
+    './base/container';
+
+//header footer //
+@import
+    './layout/header',
+    './layout/footer';
+//componentes//
+// @import 
+//     './components/button',
+//     './components/formbtn';
+//views//
+@import 
+    './views/index',
+    './views/about',
+    './views/portfolio',
+    './views/products',
+    './views/contact';
