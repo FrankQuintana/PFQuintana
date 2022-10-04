@@ -5,7 +5,7 @@
 .about__title {
     text-align: center;
     font-size: 1.9rem;
-    color: #252422;
+    color: $color-secundario;
     text-transform: uppercase;
 }
 .about__img {
@@ -14,17 +14,17 @@
 .about__title-h3 {
     font-size: 1.3rem;
     text-align: center;
-    color: #252422;
+    color: $color-secundario;
 }
 .about__txt {
     line-height: 1.5;
     margin: 1em 0 2em;
-    color: #777777;
+    color: $color-terciario;
     text-align: justify;
 }
 /* portafolio */
 .portfolio {
-    background-color: #777777;
+    background-color: $color-terciario;
 }
 .port__container {
     grid-area: gallery;
@@ -33,7 +33,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 1.9rem;
-    color: #000;
+    color: $color-secundario;
     /* letter-spacing: 2px; */
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -76,7 +76,7 @@
 .serv__txt {
     line-height: 1.5;
     margin: 1em 0 2em;
-    color: #777777;
+    color: $color-terciario;
     text-align: center;
 }
 .serv__img {
@@ -101,7 +101,7 @@
     .port__title, .port__link {
         font-size: 2.9rem;
         letter-spacing: 4px;
-        color: #252422;
+        color: $color-secundario;
     }
     /* servicios */
     .service__container {

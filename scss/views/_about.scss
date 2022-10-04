@@ -19,11 +19,11 @@
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 15px;
-    color: #252422;
+    color:$color-secundario;
 }
 .about__text-pag {
     text-align: justify;
-    color: #5e5e5e;
+    color: $color-texto;
 }
 .about__history {
     grid-row: 3/4;
