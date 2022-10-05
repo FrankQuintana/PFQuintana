@@ -181,7 +181,7 @@ body {
   margin-bottom: 5px;
 }
 
-.footert__txt {
+.footer__txt {
   margin-top: 12px;
   text-align: center;
 }
@@ -458,41 +458,34 @@ body {
 .about__nosotros {
   display: grid;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, max-content);
 }
-
-.about__mision {
+.about__nosotros .about__mision {
   grid-row: 1/2;
 }
-
-.about__team {
+.about__nosotros .about__team {
   grid-row: 2/3;
 }
-
-.img__about-pag, .vid__about-pag {
+.about__nosotros .about__history {
+  grid-row: 3/4;
+}
+.about__nosotros .about__video {
+  grid-row: 4/5;
+}
+.about__nosotros .img__about-pag, .about__nosotros .vid__about-pag {
   width: 100%;
 }
-
-.about__title-pag {
+.about__nosotros .about__title-pag {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 15px;
   color: #252422;
 }
-
-.about__text-pag {
+.about__nosotros .about__text-pag {
   text-align: justify;
   color: #5e5e5e;
-}
-
-.about__history {
-  grid-row: 3/4;
-}
-
-.about__video {
-  grid-row: 4/5;
 }
 
 @media (min-width: 768px) {
@@ -501,15 +494,21 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, max-content);
   }
-  .about__team {
+  .about__nosotros .about__mision {
+    justify-self: center;
+    align-self: center;
+  }
+  .about__nosotros .about__team {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .about__history {
+  .about__nosotros .about__history {
     grid-column: 2/3;
     grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
   }
-  .about__video {
+  .about__nosotros .about__video {
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: center;
@@ -518,13 +517,29 @@ body {
 }
 @media (min-width: 1024px) {
   /* pagina nosotros */
-  .about__team {
-    width: 70%;
+  .about__nosotros .about__team {
+    width: 80%;
   }
-  .about__mision,
-.about__history {
-    justify-self: center;
-    align-self: center;
+  .about__nosotros .about__mision {
+    margin-left: 30px;
+  }
+  .about__nosotros .about__history {
+    padding-right: 50px;
+  }
+  .about__nosotros .about__title-pag {
+    font-size: 2.7rem;
+  }
+  .about__nosotros .about__text-pag {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* pagina nosotros */
+  .about__nosotros .about__title-pag {
+    font-size: 2.7rem;
+  }
+  .about__nosotros .about__text-pag {
+    font-size: 1.8rem;
   }
 }
 /* pagina portafolio */
@@ -541,63 +556,54 @@ body {
   gap: 5px;
   overflow: hidden;
 }
-
-.gallery__cont {
+.gallery .gallery__cont {
   position: block;
 }
-
-.gallery__img {
+.gallery .gallery__cont .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 2s;
 }
-
-.gallery__img:hover {
+.gallery .gallery__cont .gallery__img .gallery__img:hover {
   transform: scale(1.15);
 }
-
-.gallery__cont:nth-child(2) {
+.gallery .gallery__cont:nth-child(2) {
   grid-row-start: span 2;
 }
-
-.gallery__cont:nth-child(4) {
+.gallery .gallery__cont:nth-child(4) {
   grid-column-start: span 2;
 }
-
-.gallery__cont:nth-child(7) {
+.gallery .gallery__cont:nth-child(7) {
   grid-column-start: span 2;
 }
-
-.gallery__cont:nth-child(12) {
+.gallery .gallery__cont:nth-child(12) {
   grid-column-end: span 2;
 }
-
-.gallery__cont:nth-child(9) {
+.gallery .gallery__cont:nth-child(9) {
   grid-row-start: span 2;
 }
-
-.gallery__cont:nth-child(10) {
+.gallery .gallery__cont:nth-child(10) {
   grid-row-start: span 2;
 }
 
 @media (min-width: 768px) {
   /* pagina portafolio */
+  .gallery__title {
+    font-size: 2.5rem;
+  }
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     gap: 10px;
   }
-  .gallery__title {
-    font-size: 2rem;
-  }
-  .gallery__cont:nth-child(12) {
+  .gallery .gallery__cont:nth-child(12) {
     grid-column-end: span 3;
   }
-  .gallery__cont:nth-child(1) {
+  .gallery .gallery__cont:nth-child(1) {
     grid-column-start: span 2;
   }
-  .gallery__cont:nth-child(3) {
+  .gallery .gallery__cont:nth-child(3) {
     grid-column-start: span 2;
   }
 }
@@ -610,13 +616,10 @@ body {
     width: 95%;
     margin: auto;
   }
-  .gallery__title {
-    font-size: 2.5rem;
-  }
-  .gallery__cont:nth-child(11) {
+  .gallery .gallery__cont:nth-child(11) {
     grid-column-start: span 2;
   }
-  .gallery__cont:nth-child(2) {
+  .gallery .gallery__cont:nth-child(2) {
     grid-column-start: span 2;
     grid-row-start: span 2;
   }
@@ -636,8 +639,7 @@ body {
   grid-template-rows: repeat(6, max-content);
   gap: 15px;
 }
-
-.products__ind {
+.products__container .products__ind {
   padding: 10px;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0);
   border-radius: 10px;
@@ -648,20 +650,20 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
-.prod__img {
+.products__container .products__ind .prod__img {
   width: 90%;
   border-radius: 10px;
 }
-
-.prod__title {
+.products__container .products__ind .prod__title {
+  margin-top: 8px;
   margin-bottom: 5px;
   text-align: center;
   color: #252422;
+  font-size: 0.8rem;
 }
-
-.prod__txt {
+.products__container .products__ind .prod__txt {
   font-weight: 400;
+  font-size: 0.9rem;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -669,18 +671,21 @@ body {
 
 @media (min-width: 768px) {
   /* pagina productos */
-  .products__container {
-    gap: 25px;
-  }
   .product__title {
     font-size: 3rem;
     margin-bottom: 30px;
   }
-  .prod__title,
-.prod__txt {
-    font-size: 1.7rem;
+  .products__container {
+    gap: 30px;
   }
-  .prod__btn {
+  .products__container .products__ind .prod__img {
+    margin-top: 8px;
+  }
+  .products__container .products__ind .prod__title,
+.products__container .products__ind .prod__txt {
+    font-size: 1.5rem;
+  }
+  .products__container .products__ind .prod__btn {
     padding: 10px 20px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -689,7 +694,7 @@ body {
 @media (min-width: 1024px) {
   /* pagina productos */
   .products__container {
-    padding: 0 30px;
+    padding: 10px 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, max-content);
   }
@@ -702,8 +707,7 @@ body {
   grid-template-rows: repeat(2, max-content);
   gap: 15px;
 }
-
-.contact__container {
+.contact .contact__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -712,22 +716,20 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 }
-
-.contact__number,
-.contact__ubication,
-.contact__time {
+.contact .contact__container .contact__number,
+.contact .contact__container .contact__ubication,
+.contact .contact__container .contact__time {
   margin: 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #252422;
 }
-
-.contact__icon {
+.contact .contact__container .contact__icon {
   width: 35px;
 }
-
-.contact__form {
+.contact .contact__form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -737,32 +739,27 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0);
 }
-
-.contact__title-form {
+.contact .contact__form .contact__title-form {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 70px;
   text-transform: uppercase;
 }
-
-.form, .contact__line {
+.contact .contact__form .form, .contact .contact__form .contact__line {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
 }
-
-.contact__line {
+.contact .contact__form .contact__line {
   margin-bottom: 45px;
 }
-
-.contact__label {
+.contact .contact__form .contact__line .contact__label {
   font-size: 1.2rem;
   font-weight: 600;
 }
-
-.form__input {
+.contact .contact__form .contact__line .form__input {
   height: 30px;
   outline: none;
   padding: 5px 0;
@@ -772,26 +769,25 @@ body {
   border-right: none;
   width: 100%;
 }
-
-.form__input--message {
+.contact .contact__form .contact__line .form__input--message {
   height: 100px;
   width: 100%;
   resize: none;
 }
 
-/* .ubication__link {
-    color: #000;
-} */
 @media (min-width: 768px) {
   /* pagina contacto */
   .contact {
     grid-template-columns: repeat(2, max-content);
   }
-  .contact__container {
+  .contact .contact__container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+  .contact .contact__container .contact__icon {
+    width: 45px;
   }
 }
 @media (min-width: 1024px) {
@@ -801,15 +797,15 @@ body {
     padding: 10px 70px;
     gap: 30px;
   }
-  .contact__title {
+  .contact .contact__container .contact__title {
     font-size: 2rem;
     font-weight: 400;
   }
-  .contact__txt {
+  .contact .contact__container .contact__txt {
     font-size: 1.2rem;
     font-weight: 400;
   }
-  .contact__icon {
+  .contact .contact__container .contact__icon {
     width: 50px;
   }
 }
