@@ -1,18 +1,18 @@
 @use '../abstracts/variables';
-.form__btn {
+.btn {
     padding: 18px 55px;
     background-color: $color-secundario;
     border-radius: 50px;
-    color: $color-alternativodos;
+    color: $color-alternativo;
     font-weight: 600;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
     transition: 1s;
-}
-.form__btn:hover {
-    color: $color-primario;
-    background-color: #fff;
-    border: $color-secundario solid 2px;
-    box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
+    &:hover {
+        color: $color-primario;
+        background-color: #fff;
+        border: $color-secundario solid 2px;
+        box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
+    }
 }
