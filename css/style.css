@@ -477,6 +477,9 @@ body {
 .about__nosotros .img__about-pag, .about__nosotros .vid__about-pag {
   width: 100%;
 }
+.about__nosotros .img__about-pag {
+  border-radius: 20px;
+}
 .about__nosotros .about__title-pag {
   font-size: 1.8rem;
   text-align: center;
@@ -547,6 +550,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding: 15px 0 10px;
+  color: #252422;
 }
 
 .gallery {
@@ -563,10 +567,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 2s;
-}
-.gallery .gallery__cont .gallery__img .gallery__img:hover {
-  transform: scale(1.15);
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 .gallery .gallery__cont:nth-child(2) {
   grid-row-start: span 2;
@@ -734,7 +737,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 15px 20px;
+  padding: 40px 25px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0);
