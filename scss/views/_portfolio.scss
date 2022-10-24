@@ -10,19 +10,7 @@
     grid-auto-rows: 200px;
     gap: 5px;
     overflow: hidden;
-    .gallery__cont {
-        position: block;
-        .gallery__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 2s;
-            .gallery__img:hover {
-                transform: scale(1.15);
-            }
-        }
-        
-    }
+    
     .gallery__cont:nth-child(2) {
         grid-row-start: span 2;
     }
@@ -41,6 +29,20 @@
     .gallery__cont:nth-child(10) {
         grid-row-start: span 2;
     }
+}
+.gallery__cont {
+    position: block;
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 2s;
+        cursor: pointer;
+        .gallery__img:hover {
+            transform: scale(1.15);
+        }
+    }
+    
 }
 
 
