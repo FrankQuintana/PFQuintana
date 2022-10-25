@@ -269,7 +269,7 @@ body {
 }
 .about__container .about__txts .about__txt {
   margin: 1em 0 2em;
-  color: #777777;
+  color: #5e5e5e;
   text-align: justify;
 }
 
@@ -487,8 +487,8 @@ body {
   color: #252422;
 }
 .about__nosotros .about__text-pag {
-  text-align: justify;
   color: #5e5e5e;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -568,7 +568,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .gallery .gallery__cont:nth-child(2) {

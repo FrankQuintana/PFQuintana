@@ -31,8 +31,7 @@
         color:$color-secundario;
     }
     .about__text-pag {
-        text-align: justify;
-        color: $color-texto;
+        @include important-text;
     }
 }
 

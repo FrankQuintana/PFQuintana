@@ -21,8 +21,7 @@
         }
         .about__txt {
             margin: 1em 0 2em;
-            color: $color-terciario;
-            text-align: justify;
+            @include important-text;
         }
     } 
 }

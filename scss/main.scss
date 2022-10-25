@@ -1,4 +1,6 @@
-@import './abstracts/variables';
+@import 
+    './abstracts/variables',
+    './abstracts/mixins';
 // base container fonts //
 @import 
     './base/base',
