@@ -1,19 +1,37 @@
 @use '../abstracts/variables';
-.prod__btn {
-    padding: 5px 15px;
+//base de los botones// 
+.button-basic {
     background-color: $color-secundario;
     border-radius: 50px;
     color: $color-alternativo;
     font-weight: 600;
     border: none;
-    font-size: 1rem;
     cursor: pointer;
+}
+.hover-button {
+    color: $color-primario;
+    background-color: #fff;
+    border: $color-secundario solid 2px;
+    box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
+}
+//boton productos//
+.prod__btn {
+    @extend .button-basic;
+    padding: 5px 15px;
+    font-size: 1rem;
     align-self: center;
-    transition: .5s ease all;
+    transition: .5s ease;
     &:hover {
-        border: $color-secundario solid 2px;
-        background: #fff;
-        color: $color-textoBtn;
-        box-shadow: 0 0 10px 0 rgba(38, 70, 83, 1.5);
+        @extend .hover-button;
+    }
+}
+//boton formulario//
+.btn {
+    @extend .button-basic;
+    padding: 18px 55px;
+    font-size: 1.2rem;
+    transition: 1s;
+    &:hover {
+        @extend .hover-button;
     }
 }
